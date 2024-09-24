@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <select id="subjectSelect" class="button">
+          <option value="" disabled selected>Select a Subject</option>
+          <option value="physics">Physics</option>
+          <option value="chemistry">Chemistry</option>
+          <option value="computerScience">Computer Science</option>
+        </select>
+        <button id="start" class="button hide">Start Quiz</button>
+        <div id="quizInfo" class="hide">
+          <div id="timer">Time: 02:00</div>
+          <div id="questionNumber">Question: 1/10</div>
+        </div>
+        <div id="quiz" class="hide"></div>
+        <div id="result" class="result hide"></div>
+        <canvas id="scoreChart" class="hide"></canvas>
+        <button id="submit" class="button hide">Submit</button>
+        <button id="retry" class="button hide">Retry</button>
+        <button id="showAnswer" class="button hide">Show Answer</button>
+      </div>
+      
+  <script src="script.js"></script>
+</body>
+</html>
